@@ -1,0 +1,39 @@
+.section--team {
+  width: 1600px;
+  margin: 0 auto;
+  min-height: 708px;
+  background-color: $secondary-bg-color;
+}
+
+.team__box {
+  background-color: $header-bg-color;
+
+  & + & {
+    margin-left: 30px;
+  }
+}
+
+.team__list {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.team {
+  display: flex;
+  justify-content: center;
+}
+
+.team__name {
+  margin-bottom: 0;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  color: $title-text-color;
+}
+
+.team__job {
+  margin-top: 10px;
+  margin-bottom: 16px;
+  font-size: 16px;
+  text-align: center;
+}
