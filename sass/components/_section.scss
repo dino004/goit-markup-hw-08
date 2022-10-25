@@ -1,5 +1,17 @@
 .section {
-  min-width: 1600px;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  min-width: 450px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  @media screen and (min-width: $tablet) {
+    min-width: 1600px;
+      padding-top: 94px;
+      padding-bottom: 94px;
+  }
+
+    @media screen and (min-width: $desktop) {
+      min-width: 1600px;
+      padding-top: 94px;
+      padding-bottom: 94px;
+    }
 }
