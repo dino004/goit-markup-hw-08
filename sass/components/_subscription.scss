@@ -1,21 +1,23 @@
 .subscription-form {
-  display: flex;
-  margin-left: auto;
+margin-top: 60px;
+  // display: flex;
+  // margin-left: auto;
 }
 
 .subscribe {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .subscribe__label {
-  margin-bottom: 20px;
   text-transform: uppercase;
   font-weight: 700;
   color: $header-bg-color;
 }
 
 .subscribe__input {
+  margin-top: 20px;
   width: 358px;
   min-height: 50px;
   margin-right: 12px;
@@ -46,7 +48,9 @@
 .subscribe__button {
   width: 200px;
   height: 50px;
-  margin-top: 35px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
 
   display: flex;
   justify-content: center;

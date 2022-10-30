@@ -20,6 +20,8 @@
     &--footer {
         display: inline-block;
         margin-bottom: 20px;
+        width: 100%;
+        text-align: center;
         color: $header-bg-color;
     }
 }
