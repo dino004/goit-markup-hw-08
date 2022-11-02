@@ -1,7 +1,11 @@
 .section {
-  min-width: 450px;
+  // min-width: 450px;
   padding-top: 30px;
   padding-bottom: 30px;
+
+  @media screen and (min-width: $mobile) {
+    width: 450px;
+  }
 
   @media screen and (min-width: $tablet) {
     min-width: 1600px;
