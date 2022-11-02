@@ -18,10 +18,15 @@ margin-top: 60px;
 
 .subscribe__input {
   margin-top: 20px;
-  width: 358px;
+  // width: 358px;
   min-height: 50px;
-  margin-right: 12px;
+  margin-left: auto;
+  margin-right: auto;
   padding: 15px 16px;
+
+  @media screen and (min-width: $mobile) {
+    width: 358px;
+  }
 
   font-size: 16px;
   line-height: 1.25;
