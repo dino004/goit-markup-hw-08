@@ -724,11 +724,6 @@ textarea {
   padding-top: 30px;
   padding-bottom: 30px;
 }
-@media screen and (min-width: 480px) {
-  .section {
-    width: 450px;
-  }
-}
 @media screen and (min-width: 768px) {
   .section {
     min-width: 1600px;
@@ -852,8 +847,6 @@ textarea {
 }
 
 .section--team {
-  margin-left: auto;
-  margin-right: auto;
   background-color: #f5f4fa;
 }
 @media screen and (min-width: 480px) {
@@ -989,12 +982,6 @@ textarea {
 
 .social__icon--footer {
   fill: #ffffff;
-}
-
-@media screen and (min-width: 480px) {
-  .section--clients {
-    width: 480px;
-  }
 }
 
 .clients {
