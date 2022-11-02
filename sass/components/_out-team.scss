@@ -1,8 +1,13 @@
 .section--team {
   // width: 1600px;
-  margin: 0 auto;
+margin-left: auto;
+margin-right: auto;
   // min-height: 708px;
   background-color: $secondary-bg-color;
+
+  @media screen and (min-width: $mobile) {
+    width: $mobile;
+  }
 }
 
 .team__box {

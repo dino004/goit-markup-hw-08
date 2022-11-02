@@ -1,3 +1,9 @@
+.section--clients {
+  @media screen and (min-width: $mobile) {
+    width: $mobile;
+  }
+}
+
 .clients {
 display: flex;
   flex-wrap: wrap;

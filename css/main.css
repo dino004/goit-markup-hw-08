@@ -852,8 +852,14 @@ textarea {
 }
 
 .section--team {
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   background-color: #f5f4fa;
+}
+@media screen and (min-width: 480px) {
+  .section--team {
+    width: 480px;
+  }
 }
 
 .team__box {
@@ -983,6 +989,12 @@ textarea {
 
 .social__icon--footer {
   fill: #ffffff;
+}
+
+@media screen and (min-width: 480px) {
+  .section--clients {
+    width: 480px;
+  }
 }
 
 .clients {
