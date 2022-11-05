@@ -1,10 +1,11 @@
 .container--projects {
-  display: none;
+  @media screen and (max-width: 1199px) {
+      display: none;
+  }
 }
 .projects {
   display: flex;
   justify-content: center;
-  margin-top: 50px;
 }
 
 .projekts__employment {

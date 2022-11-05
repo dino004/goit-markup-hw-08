@@ -52,14 +52,18 @@
   margin-bottom: 20px;
 
   font-weight: 700;
-  text-align: center;
   text-transform: uppercase;
   color: $header-bg-color;
 }
 
 .social-footer {
-  margin-top: 60px;
-  // margin-left: 70px;
+@media screen and (max-width: 767px) {
+    margin-top: 60px;
+      text-align: center;
+}
+@media screen and (min-width: $desktop) {
+    margin-left: 70px;
+}
 }
 
 .social--footer {

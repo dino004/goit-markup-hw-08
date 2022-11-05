@@ -1,6 +1,6 @@
 .section {
-margin-left: auto;
-margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 30px;
   padding-bottom: 30px;
 
@@ -9,25 +9,29 @@ margin-right: auto;
   // }
 
   @media screen and (min-width: $tablet) {
-    min-width: 1600px;
-      padding-top: 94px;
-      padding-bottom: 94px;
+    width: 768px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 
-    @media screen and (min-width: $desktop) {
-      min-width: 1600px;
-      padding-top: 94px;
-      padding-bottom: 94px;
-    }
+  @media screen and (min-width: $desktop) {
+    min-width: 1600px;
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .section__title {
   font-weight: 700;
-    font-size: 28px;
-    line-height: 1.2;
-    text-align: center;
+  font-size: 28px;
+  line-height: 1.2;
+  text-align: center;
   margin-top: 0;
   margin-bottom: 30px;
-  // font-size: 36px;
   color: $title-text-color;
+
+  @media screen and (min-width: $desktop) {
+    font-size: 36px;
+      margin-bottom: 50px;
+  }
 }

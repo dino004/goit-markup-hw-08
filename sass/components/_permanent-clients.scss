@@ -1,35 +1,36 @@
 .section--clients {
-
 }
 
 .clients {
-display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
+  display: flex;
 
-  // display: flex;
-  // justify-content: center;
+  @media screen and (max-width: 1199px) {
+    flex-wrap: wrap;
+    gap: 30px;
+
+    @media screen and (min-width: $desktop) {
+      justify-content: center;
+    }
+  }
 }
 
 .clients__list {
-    flex-basis: calc((100% - 30px) / 2);
   height: 92px;
 
-  @media screen and (min-width: $mobile) {
-    width: 210px;
+  @media screen and (max-width: 767px) {
+    flex-basis: calc((100% - 30px) / 2);
   }
 
-  @media screen and (min-width: $mobile) {
-    width: 226px;
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    flex-basis: calc((100% - 30px) / 3);
   }
 
-  @media screen and (min-width: $mobile) {
+  @media screen and (min-width: $desktop) {
     width: 170px;
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
   }
-
-  // &:not(:last-child) {
-  //   margin-right: 30px;
-  // }
 }
 
 .clients__link {
