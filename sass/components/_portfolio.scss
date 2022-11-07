@@ -34,14 +34,14 @@
 /* результат фільтра */
 
 .list-filters {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  margin-top: 50px;
+  // display: flex;
+  // flex-wrap: wrap;
+  // gap: 30px;
+  // margin-top: 50px;
 }
 
 .list-filters__item {
-  flex-basis: calc((100% - 60px) / 3);
+  // flex-basis: calc((100% - 60px) / 3);
 }
 
 .list-filters__link {
