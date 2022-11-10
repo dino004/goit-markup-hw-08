@@ -1,7 +1,4 @@
 .section--team {
-  // width: 1600px;
-
-  // min-height: 708px;
   background-color: $secondary-bg-color;
 
   @media screen and (min-width: $mobile) {
@@ -11,10 +8,14 @@
   @media screen and (min-width: $tablet) {
     width: $tablet;
   }
+
+  @media screen and (min-width: $desktop) {
+    width: $desktop;
+  }
 }
 
 .team {
-    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
@@ -22,22 +23,21 @@
 
   @media screen and (min-width: $desktop) {
     display: flex;
-      justify-content: center;
+    justify-content: center;
   }
 }
 
 .team__box {
-
   background-color: $header-bg-color;
-  
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-      0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
 
-  @media screen and (max-width: 767px)and (max-width: 1199px) {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+
+  @media screen and (max-width: 767px) and (max-width: 1199px) {
     &:not(:last-child) {
-        margin-bottom: 30px;
-      }
+      margin-bottom: 30px;
+    }
   }
 
   @media screen and (min-width: $tablet) {
@@ -45,18 +45,18 @@
   }
 
   @media screen and (min-width: $desktop) {
-    &+& {
-        margin-left: 30px;
-      }
+    & + & {
+      margin-left: 30px;
+    }
   }
 }
 
 .team__list {
   padding-top: 30px;
   padding-bottom: 24px;
-   @media screen and (min-width: $desktop) {
-      padding-bottom: 30px;
-   }
+  @media screen and (min-width: $desktop) {
+    padding-bottom: 30px;
+  }
 }
 
 .team__name {

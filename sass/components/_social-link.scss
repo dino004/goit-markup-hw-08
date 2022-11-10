@@ -46,7 +46,6 @@
   }
 }
 
-
 .social-footer__join {
   margin-top: 0;
   margin-bottom: 20px;
@@ -57,13 +56,13 @@
 }
 
 .social-footer {
-@media screen and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     margin-top: 60px;
-      text-align: center;
-}
-@media screen and (min-width: $desktop) {
+    text-align: center;
+  }
+  @media screen and (min-width: $desktop) {
     margin-left: 70px;
-}
+  }
 }
 
 .social--footer {
@@ -79,11 +78,9 @@
   background-color: $social-footer-color;
 
   &:not(:last-child) {
-      margin-right: 10px;
-    }
+    margin-right: 10px;
+  }
 }
-
-
 
 .social__icon--footer {
   fill: $header-bg-color;

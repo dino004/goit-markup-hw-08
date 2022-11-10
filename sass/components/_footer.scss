@@ -1,7 +1,4 @@
 .footer {
-  // width: 1600px;
-  // min-height: 252px;
-
   padding-top: 60px;
   padding-bottom: 60px;
   margin: 0 auto;
@@ -9,24 +6,24 @@
   background-color: $hero-bg-color;
 
   @media screen and (max-width: 767px) {
-        margin-top: 30px;
+    margin-top: 30px;
   }
 
   @media screen and (min-width: $mobile) {
-    width: $mobile;
+    max-width: $mobile;
   }
 
   @media screen and (min-width: $tablet) {
-    width: $tablet;
+    max-width: $tablet;
   }
 
-     @media screen and (min-width: $desktop) {
-       width: 1600px;
-     }
+  @media screen and (min-width: $desktop) {
+    max-width: 1600px;
+  }
 }
 
 .communication {
-  @media screen and (min-width: $tablet) and (max-width: 1199px){
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
     display: flex;
     justify-content: space-around;
     align-items: baseline;

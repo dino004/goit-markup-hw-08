@@ -1,39 +1,31 @@
-.section--plus {
-  // padding-bottom: 0;
-}
-
 .pluses {
-
   @media screen and (min-width: $tablet) and (max-width: 1199px) {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
   }
-    @media screen and (min-width: $desktop) {
-      display: flex;
-      justify-content: center;
-    }
-  // display: flex;
-  // justify-content: center;
-
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .pluses__item {
-@media screen and (min-width: $tablet) and (max-width: 1199px) {
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
     width: calc((100% - 30px) / 2);
-}
-    @media screen and (min-width: $desktop) {
-      width: 270px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 270px;
 
-      & + & {
-        margin-left: 30px;
-      }
+    & + & {
+      margin-left: 30px;
     }
+  }
 }
 
 .pluses-box {
   min-height: 120px;
-        margin-bottom: 30px;
+  margin-bottom: 30px;
   display: flex;
   justify-content: center;
   align-items: center;

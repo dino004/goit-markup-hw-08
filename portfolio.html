@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html lang="uk">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Портфоліо</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body class="body">
     <header class="header">
@@ -18,7 +23,7 @@
         <a href="./index.html" class="logo logo--header" lang="en"
           ><span class="logo__web">Web</span>Studio</a
         >
-        <nav clamenu-navss="main-nav">
+        <nav class="navigation">
           <button
             type="button"
             class="menu-button is-open"
@@ -42,74 +47,151 @@
               ></use>
             </svg>
           </button>
-          <ul class="menu" id="menu-nav" data-menu>
-            <li class="menu__item">
-              <a href="./index.html" class="menu__link menu__link--current"
-                >Студія</a
-              >
-            </li>
-            <li class="menu__item">
-              <a href="./portfolio.html" class="menu__link">Портфоліо</a>
-            </li>
-            <li class="menu__item">
-              <a href="" class="menu__link">Контакти</a>
-            </li>
-          </ul>
+          <div class="menu" id="menu-nav" data-menu>
+            <div>
+              <ul class="main-nav">
+                <li class="menu__item">
+                  <a href="./index.html" class="menu__link">Студія</a>
+                </li>
+                <li class="menu__item">
+                  <a
+                    href="./portfolio.html"
+                    class="menu__link menu__link--current"
+                    >Портфоліо</a
+                  >
+                </li>
+                <li class="menu__item">
+                  <a href="" class="menu__link">Контакти</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="contact">
+              <ul class="contact-header">
+                <li class="contact-header__item">
+                  <a
+                    href="mailto:info@devstudio.com"
+                    class="contact-header__link contact-header__link--mail"
+                  >
+                    <svg
+                      class="contact-header__icon contact-header__icon--mail"
+                    >
+                      <use href="./images/icons.svg#icon-mail"></use>
+                    </svg>
+                    info@devstudio.com</a
+                  >
+                </li>
+                <li class="contact-header__item">
+                  <a
+                    href="tel:+380961111111"
+                    class="contact-header__link contact-header__link--phone"
+                  >
+                    <svg class="contact-header__icon contact-header__icon--tel">
+                      <use href="./images/icons.svg#icon-tel"></use></svg>+38 096 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="social-header">
+              <ul class="social-header__list">
+                <li class="social-header__item">
+                  <a
+                    href="https://www.instagram.com/"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    class="social-header__link"
+                    >instagram
+                  </a>
+                </li>
+                <li class="social-header__item">
+                  <a
+                    href="https://twitter.com/?lang=ru"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    class="social-header__link"
+                    >twitter
+                  </a>
+                </li>
+                <li class="social-header__item">
+                  <a
+                    href="https://uk-ua.facebook.com/"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    class="social-header__link"
+                    >facebook
+                  </a>
+                </li>
+                <li class="social-header__item">
+                  <a
+                    href="https://ua.linkedin.com/"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    class="social-header__link"
+                    >linkedin
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </nav>
-        <ul class="contact-header">
-          <li class="contact-header__item">
-            <a href="mailto:info@devstudio.com" class="contact-header__link">
-              <svg class="contact-header__icon contact-header__icon--mail">
-                <use href="./images/icons.svg#icon-mail"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li class="contact-header__item">
-            <a href="tel:+380961111111" class="contact-header__link">
-              <svg class="contact-header__icon contact-header__icon--tel">
-                <use href="./images/icons.svg#icon-tel"></use></svg>+38 096 111 11 11</a
-            >
-          </li>
-        </ul>
       </div>
     </header>
     <main>
       <section class="section">
-      <h1 class="section__title section__title--none">список карток</h1>
-      <div class="container">
-        <ul class="filtrs">
-          <li class="filtrs__item"><button type="button" class="filtrs__button">Усі</button></li>
-          <li class="filtrs__item"><button type="button" class="filtrs__button">Веб-сайти</button></li>
-          <li class="filtrs__item"><button type="button" class="filtrs__button">Додатки</button></li>
-          <li class="filtrs__item"><button type="button" class="filtrs__button">Дизайн</button></li>
-          <li class="filtrs__item"><button type="button" class="filtrs__button">Маркетинг</button></li>
-        </ul>
-      </div>
+        <h1 class="section__title section__title--none">список карток</h1>
+        <div class="container">
+          <ul class="filtrs">
+            <li class="filtrs__item">
+              <button type="button" class="filtrs__button">Усі</button>
+            </li>
+            <li class="filtrs__item">
+              <button type="button" class="filtrs__button">Веб-сайти</button>
+            </li>
+            <li class="filtrs__item">
+              <button type="button" class="filtrs__button">Додатки</button>
+            </li>
+            <li class="filtrs__item">
+              <button type="button" class="filtrs__button">Дизайн</button>
+            </li>
+            <li class="filtrs__item">
+              <button type="button" class="filtrs__button">Маркетинг</button>
+            </li>
+          </ul>
+        </div>
         <div class="container">
           <ul class="list-filters">
             <li class="list-filters__item">
               <a href="" class="list-filters__link">
-                  <div class="list-filters__image">
-                    <img src="./images/krayk.jpg" alt="Технокряк" width="370">
+                <div class="list-filters__image">
+                  <img src="./images/krayk.jpg" alt="Технокряк" width="370" />
                   <div class="card-overlay">
-                    <p class="card-overlay__hover">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                    <p class="card-overlay__hover">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем
+                      функціоналу та сервісів. Все це дозволить відвідувачу
+                      отримати вичерпні відомості про компанію чи приватну
+                      особу.
+                    </p>
                   </div>
-                  </div>
+                </div>
                 <div class="cards">
                   <h2 class="cards__name">Технокряк</h2>
-                <p class="cards__type">Веб-сайт</p>
+                  <p class="cards__type">Веб-сайт</p>
                 </div>
               </a>
             </li>
             <li class="list-filters__item">
               <a href="" class="list-filters__link">
                 <div class="list-filters__image">
-                <img src="./images/poster.jpg" alt="Постер" width="370">
-                <div class="card-overlay">
-                <p class="card-overlay__hover">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
-              </div>
-            </div>
+                  <img src="./images/poster.jpg" alt="Постер" width="370" />
+                  <div class="card-overlay">
+                    <p class="card-overlay__hover">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем
+                      функціоналу та сервісів. Все це дозволить відвідувачу
+                      отримати вичерпні відомості про компанію чи приватну
+                      особу.
+                    </p>
+                  </div>
+                </div>
                 <div class="cards">
                   <h2 class="cards__name">
                     Постер <span lang="en">New Orlean vs Golden Star</span>
@@ -121,11 +203,16 @@
             <li class="list-filters__item">
               <a href="" class="list-filters__link">
                 <div class="list-filters__image">
-                <img src="./images/seafoot.jpg" alt="ресторан" width="370">
-                <div class="card-overlay">
-                <p class="card-overlay__hover">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
-              </div>
-            </div>
+                  <img src="./images/seafoot.jpg" alt="ресторан" width="370" />
+                  <div class="card-overlay">
+                    <p class="card-overlay__hover">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем
+                      функціоналу та сервісів. Все це дозволить відвідувачу
+                      отримати вичерпні відомості про компанію чи приватну
+                      особу.
+                    </p>
+                  </div>
+                </div>
                 <div class="cards">
                   <h2 class="cards__name">
                     Ресторан <span lang="en">Seafood</span>
@@ -137,39 +224,62 @@
             <li class="list-filters__item">
               <a href="" class="list-filters__link">
                 <div class="list-filters__image">
-                <img src="./images/prime.jpg" alt="проєкти" width="370">
-                <div class="card-overlay">
-                <p class="card-overlay__hover">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
-              </div>
-            </div>
+                  <img src="./images/prime.jpg" alt="проєкти" width="370" />
+                  <div class="card-overlay">
+                    <p class="card-overlay__hover">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем
+                      функціоналу та сервісів. Все це дозволить відвідувачу
+                      отримати вичерпні відомості про компанію чи приватну
+                      особу.
+                    </p>
+                  </div>
+                </div>
                 <div class="cards">
-                  <h2 class="cards__name">Проєкт <span lang="en">Prime</span></h2>
-                <p class="cards__type">Маркетинг</p>
+                  <h2 class="cards__name">
+                    Проєкт <span lang="en">Prime</span>
+                  </h2>
+                  <p class="cards__type">Маркетинг</p>
                 </div>
               </a>
             </li>
             <li class="list-filters__item">
               <a href="" class="list-filters__link">
                 <div class="list-filters__image">
-                <img src="./images/boxes.jpg" alt="додатки" width="370">
-                <div class="card-overlay">
-                <p class="card-overlay__hover">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
-              </div>
-            </div>
+                  <img src="./images/boxes.jpg" alt="додатки" width="370" />
+                  <div class="card-overlay">
+                    <p class="card-overlay__hover">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем
+                      функціоналу та сервісів. Все це дозволить відвідувачу
+                      отримати вичерпні відомості про компанію чи приватну
+                      особу.
+                    </p>
+                  </div>
+                </div>
                 <div class="cards">
-                  <h2 class="cards__name">Проєкт <span lang="en">Boxes</span></h2>
-                <p class="cards__type">Додаток</p>
+                  <h2 class="cards__name">
+                    Проєкт <span lang="en">Boxes</span>
+                  </h2>
+                  <p class="cards__type">Додаток</p>
                 </div>
               </a>
             </li>
             <li class="list-filters__item">
               <a href="" class="list-filters__link">
                 <div class="list-filters__image">
-                <img src="./images/inspiration.jpg" alt="веб-сайти" width="370">
-                <div class="card-overlay">
-                <p class="card-overlay__hover">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
-              </div>
-            </div>
+                  <img
+                    src="./images/inspiration.jpg"
+                    alt="веб-сайти"
+                    width="370"
+                  />
+                  <div class="card-overlay">
+                    <p class="card-overlay__hover">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем
+                      функціоналу та сервісів. Все це дозволить відвідувачу
+                      отримати вичерпні відомості про компанію чи приватну
+                      особу.
+                    </p>
+                  </div>
+                </div>
                 <div class="cards">
                   <h2 class="cards__name">
                     <span lang="en">Inspiration has no Borders</span>
@@ -181,11 +291,16 @@
             <li class="list-filters__item">
               <a href="" class="list-filters__link">
                 <div class="list-filters__image">
-                <img src="./images/limited.jpg" alt="видання" width="370">
-                <div class="card-overlay">
-                <p class="card-overlay__hover">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
-              </div>
-            </div>
+                  <img src="./images/limited.jpg" alt="видання" width="370" />
+                  <div class="card-overlay">
+                    <p class="card-overlay__hover">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем
+                      функціоналу та сервісів. Все це дозволить відвідувачу
+                      отримати вичерпні відомості про компанію чи приватну
+                      особу.
+                    </p>
+                  </div>
+                </div>
                 <div class="cards">
                   <h2 class="cards__name">
                     Видання <span lang="en">Limited Edition</span>
@@ -197,25 +312,35 @@
             <li class="list-filters__item">
               <a href="" class="list-filters__link">
                 <div class="list-filters__image">
-                <img src="./images/lab.jpg" alt="маркетинг" width="370">
-                <div class="card-overlay">
-                <p class="card-overlay__hover">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
-              </div>
-            </div>
+                  <img src="./images/lab.jpg" alt="маркетинг" width="370" />
+                  <div class="card-overlay">
+                    <p class="card-overlay__hover">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем
+                      функціоналу та сервісів. Все це дозволить відвідувачу
+                      отримати вичерпні відомості про компанію чи приватну
+                      особу.
+                    </p>
+                  </div>
+                </div>
                 <div class="cards">
                   <h2 class="cards__name">Проєкт <span lang="en">LAB</span></h2>
-                <p class="cards__type">Маркетинг</p>
+                  <p class="cards__type">Маркетинг</p>
                 </div>
               </a>
             </li>
             <li class="list-filters__item">
               <a href="" class="list-filters__link">
                 <div class="list-filters__image">
-                <img src="./images/growing.jpg" alt="додаток" width="370">
-                <div class="card-overlay">
-                <p class="card-overlay__hover">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
-              </div>
-            </div>
+                  <img src="./images/growing.jpg" alt="додаток" width="370" />
+                  <div class="card-overlay">
+                    <p class="card-overlay__hover">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем
+                      функціоналу та сервісів. Все це дозволить відвідувачу
+                      отримати вичерпні відомості про компанію чи приватну
+                      особу.
+                    </p>
+                  </div>
+                </div>
                 <div class="cards">
                   <h2 class="cards__name">
                     <span lang="en">Growing Business</span>
@@ -223,7 +348,7 @@
                   <p class="cards__type">Додаток</p>
                 </div>
               </a>
-            </li>            
+            </li>
           </ul>
         </div>
       </section>

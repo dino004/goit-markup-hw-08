@@ -2,12 +2,12 @@
   margin-top: 60px;
 
   @media screen and (min-width: $desktop) {
-      display: flex;
-      justify-content: center;
-            align-items: flex-start;
-      margin-top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 0;
     margin-left: 93px;
-}
+  }
 }
 .subscribe {
   display: flex;
@@ -15,7 +15,7 @@
   align-items: center;
 
   @media screen and (min-width: $desktop) {
-        margin-right: 12px;
+    margin-right: 12px;
   }
 }
 
@@ -86,7 +86,7 @@
   color: $header-bg-color;
 
   @media screen and (max-width: 1199px) {
-      margin-top: 20px;
+    margin-top: 20px;
   }
   @media screen and (min-width: $desktop) {
     margin-top: 38px;
