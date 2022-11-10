@@ -44,6 +44,9 @@ ul {
   color: #757575;
   background-color: #ffffff;
 }
+.body.modal-open {
+  overflow: hidden;
+}
 
 .container {
   padding: 0 15px;
@@ -139,6 +142,8 @@ ul {
   background-color: rgba(0, 0, 0, 0.2);
   -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 93px 15px;
+  overflow-y: scroll;
 }
 
 .backdrop.is-hidden {
@@ -151,30 +156,31 @@ ul {
 }
 
 .modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
+  position: relative;
   padding: 40px;
   min-height: 609px;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   background-color: #ffffff;
-  -webkit-transform: translate(-50%, -50%) scale(1);
-          transform: translate(-50%, -50%) scale(1);
-  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 480px) {
   .modal {
     max-width: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
+    -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 @media screen and (min-width: 1200px) {
   .modal {
-    min-width: 528px;
+    width: 528px;
     min-height: 581px;
   }
 }
@@ -190,7 +196,7 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  left: 412px;
+  right: 8px;
   top: 8px;
   padding: 0;
   width: 30px;
@@ -217,11 +223,6 @@ ul {
   fill: #2196f3;
 }
 
-@media screen and (max-width: 767px) {
-  .contact-header {
-    display: none;
-  }
-}
 @media screen and (min-width: 768px) {
   .contact-header {
     display: -webkit-box;
@@ -271,6 +272,11 @@ ul {
   fill: currentColor;
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (max-width: 767px) {
+  .contact-header__icon {
+    display: none;
+  }
 }
 @media screen and (min-width: 768px) {
   .contact-header__icon {
@@ -565,7 +571,7 @@ textarea {
 }
 
 .form__title {
-  width: 370px;
+  max-width: 370px;
   margin: 0;
   margin-bottom: 12px;
   padding: 0;
@@ -718,7 +724,6 @@ textarea {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 370px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
@@ -1468,17 +1473,11 @@ textarea {
   fill: currentColor;
 }
 
-.filtrs {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.filtrs__item {
+  display: inline-block;
 }
 
 .filtrs__button {
-  margin-left: 8px;
   padding: 6px 22px;
   border-radius: 4px;
   border: none;
@@ -1502,8 +1501,15 @@ textarea {
   color: #ffffff;
   background-color: #2196f3;
 }
+.filtrs__button:not(:last-child) {
+  margin-right: 8px;
+}
 
 /* результат фільтра */
+.list-filters__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
 .list-filters__link {
   display: block;
   -webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);

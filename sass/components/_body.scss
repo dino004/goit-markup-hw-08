@@ -5,4 +5,8 @@
     letter-spacing: 0.03em;
     color: $primary-text-color;
     background-color: $header-bg-color;
+
+    &.modal-open {
+        overflow: hidden;
+    }
 }

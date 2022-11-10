@@ -3,7 +3,7 @@ textarea {
 }
 
 .form__title {
-  width: 370px;
+  max-width: 370px;
   margin: 0;
   margin-bottom: 12px;
   padding: 0;
@@ -123,7 +123,7 @@ textarea {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 370px;
+  // max-width: 370px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;

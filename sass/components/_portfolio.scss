@@ -1,10 +1,14 @@
 .filtrs {
-  display: flex;
-  justify-content: center;
+  // display: flex;
+  // justify-content: center;
+}
+
+.filtrs__item {
+  display: inline-block;
 }
 
 .filtrs__button {
-  margin-left: 8px;
+
   padding: 6px 22px;
   border-radius: 4px;
   border: none;
@@ -29,6 +33,10 @@
     color: $header-bg-color;
     background-color: $accent-color;
   }
+
+  &:not(:last-child) {
+  margin-right: 8px;
+  }
 }
 
 /* результат фільтра */
@@ -41,6 +49,9 @@
 }
 
 .list-filters__item {
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
   // flex-basis: calc((100% - 60px) / 3);
 }
 

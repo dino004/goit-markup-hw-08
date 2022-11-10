@@ -23,7 +23,7 @@
         <a href="./index.html" class="logo logo--header" lang="en"
           ><span class="logo__web">Web</span>Studio</a
         >
-        <nav clamenu-navss="main-nav">
+        <nav class="main-nav">
           <button
             type="button"
             class="menu-button is-open"
@@ -31,7 +31,12 @@
             aria-controls="menu-nav"
             data-menu-button
           >
-            <svg class="menu-button__svg" width="40" height="40" aria-label="перемикач мобільного меню">
+            <svg
+              class="menu-button__svg"
+              width="40"
+              height="40"
+              aria-label="перемикач мобільного меню"
+            >
               <use
                 class="icon-menu"
                 href="./images/icons.svg#icon-close-black"
@@ -42,51 +47,49 @@
               ></use>
             </svg>
           </button>
-          <ul class="menu" id="menu-nav" data-menu>
-            <li class="menu__item">
-              <a href="./index.html" class="menu__link menu__link--current"
-                >Студія</a
-              >
-            </li>
-            <li class="menu__item">
-              <a href="./portfolio.html" class="menu__link">Портфоліо</a>
-            </li>
-            <li class="menu__item">
-              <a href="" class="menu__link">Контакти</a>
-            </li>
-          </ul>
+          <div class="menu" id="menu-nav" data-menu>
+            <div>
+              <ul >
+                <li class="menu__item">
+                  <a href="./index.html" class="menu__link menu__link--current"
+                    >Студія</a
+                  >
+                </li>
+                <li class="menu__item">
+                  <a href="./portfolio.html" class="menu__link">Портфоліо</a>
+                </li>
+                <li class="menu__item">
+                  <a href="" class="menu__link">Контакти</a>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <ul class="contact-header">
+                <li class="contact-header__item">
+                  <a
+                    href="mailto:info@devstudio.com"
+                    class="contact-header__link"
+                  >
+                    <svg
+                      class="contact-header__icon contact-header__icon--mail"
+                    >
+                      <use href="./images/icons.svg#icon-mail"></use>
+                    </svg>
+                    info@devstudio.com</a
+                  >
+                </li>
+                <li class="contact-header__item">
+                  <a href="tel:+380961111111" class="contact-header__link">
+                    <svg class="contact-header__icon contact-header__icon--tel">
+                      <use href="./images/icons.svg#icon-tel"></use></svg>+38 096 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
         </nav>
-        <ul class="contact-header">
-          <li class="contact-header__item">
-            <a href="mailto:info@devstudio.com" class="contact-header__link">
-              <svg class="contact-header__icon contact-header__icon--mail">
-                <use href="./images/icons.svg#icon-mail"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li class="contact-header__item">
-            <a href="tel:+380961111111" class="contact-header__link">
-              <svg class="contact-header__icon contact-header__icon--tel">
-                <use href="./images/icons.svg#icon-tel"></use></svg
-              >+38 096 111 11 11</a
-            >
-          </li>
-        </ul>
       </div>
-      <!-- <div class="mobile-menu">
-        <div class="container mobile-menu__container">
-          <button type="button" class="mobile-menu__close-btn">
-          <svg class="mobile-menu__close-icon" width="40" height="40"><use href="./images/icons.svg#icon-close-black">
-          </use></svg>
-        </button>
-        <ul class="nav-mobile">
-          <li class="nav-mobile__list"><a href="" class="nav-mobile__link menu__link--current">Студія</a></li>
-          <li class="nav-mobile__list"><a href="" class="nav-mobile__link">Портфоліо</a></li>
-          <li class="nav-mobile__list"><a href="" class="nav-mobile__link">Контакти</a></li>
-        </ul>
-        </div>
-      </div> -->
     </header>
     <main>
       <section class="hero">
