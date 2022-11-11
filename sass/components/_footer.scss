@@ -5,10 +5,6 @@
 
   background-color: $hero-bg-color;
 
-  @media screen and (max-width: 767px) {
-    margin-top: 30px;
-  }
-
   @media screen and (min-width: $mobile) {
     width: $mobile;
   }

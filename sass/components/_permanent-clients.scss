@@ -19,7 +19,7 @@
   }
 
   @media screen and (min-width: $tablet) and (max-width: 1199px) {
-    flex-basis: calc((100% - 30px) / 3);
+    flex-basis: calc((100% - 60px) / 3);
   }
 
   @media screen and (min-width: $desktop) {

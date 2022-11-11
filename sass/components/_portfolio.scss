@@ -1,10 +1,20 @@
 .filtrs {
   // display: flex;
   // justify-content: center;
+  margin-bottom: 25px;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 30px;
+    text-align: center;
+  }
 }
 
 .filtrs__item {
   display: inline-block;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 15px;
+  }
 }
 
 .filtrs__button {
@@ -41,17 +51,27 @@
 /* результат фільтра */
 
 .list-filters {
-  // display: flex;
-  // flex-wrap: wrap;
-  // gap: 30px;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
   // margin-top: 50px;
 }
 
 .list-filters__item {
+  @media screen and (min-width: $tablet) {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+
+        @media screen and (min-width: $desktop) {
+          flex-basis: calc((100% - 60px) / 3);
+        }
+
   &:not(:last-child) {
     margin-bottom: 30px;
   }
-  // flex-basis: calc((100% - 60px) / 3);
 }
 
 .list-filters__link {
