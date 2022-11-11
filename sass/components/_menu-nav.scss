@@ -88,10 +88,7 @@
 .menu {
   @media screen and (max-width: 767px) {
     display: none;
-  }
 
-  &.is-open {
-    display: block;
     width: 100%;
     min-height: 616px;
 
@@ -102,8 +99,15 @@
     padding-left: 40px;
     padding-top: 48px;
     padding-bottom: 48px;
+  }
 
+  &.is-open {
+    display: flex;
     background-color: $header-bg-color;
+
+    @media screen and (max-width: 767px) {
+      flex-direction: column;
+    }
   }
 
   @media screen and (min-width: $tablet) {

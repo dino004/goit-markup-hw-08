@@ -500,19 +500,29 @@ ul {
 @media screen and (max-width: 767px) {
   .menu {
     display: none;
+    width: 100%;
+    min-height: 616px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-left: 40px;
+    padding-top: 48px;
+    padding-bottom: 48px;
   }
 }
 .menu.is-open {
-  display: block;
-  width: 100%;
-  min-height: 616px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding-left: 40px;
-  padding-top: 48px;
-  padding-bottom: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   background-color: #ffffff;
+}
+@media screen and (max-width: 767px) {
+  .menu.is-open {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 @media screen and (min-width: 768px) {
   .menu {
@@ -1353,17 +1363,17 @@ textarea {
 }
 @media screen and (min-width: 480px) {
   .footer {
-    max-width: 480px;
+    width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
   .footer {
-    max-width: 768px;
+    width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
   .footer {
-    max-width: 1600px;
+    width: 1600px;
   }
 }
 
