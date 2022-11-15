@@ -135,10 +135,19 @@
 
 .card-overlay__hover {
   margin: 0;
-  padding-top: 63px;
+  padding-top: 77px;
   padding-left: 24px;
+  padding-right: 24px;
 
   font-size: 18px;
   line-height: 1.5;
   color: $header-bg-color;
+
+  @media screen and (min-width: $tablet) {
+    padding-top: 49px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 63px;
+  }
 }

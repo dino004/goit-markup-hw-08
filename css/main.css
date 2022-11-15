@@ -1729,9 +1729,20 @@ textarea {
 
 .card-overlay__hover {
   margin: 0;
-  padding-top: 63px;
+  padding-top: 77px;
   padding-left: 24px;
+  padding-right: 24px;
   font-size: 18px;
   line-height: 1.5;
   color: #ffffff;
+}
+@media screen and (min-width: 768px) {
+  .card-overlay__hover {
+    padding-top: 49px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .card-overlay__hover {
+    padding-top: 63px;
+  }
 }/*# sourceMappingURL=main.css.map */
