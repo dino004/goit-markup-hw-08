@@ -5,16 +5,16 @@
 
   background-color: $hero-bg-color;
 
-  @media screen and (min-width: $mobile) {
+  @media screen and (min-width: $mobile) and (max-width: 767px){
     width: $mobile;
   }
 
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
     width: $tablet;
   }
 
   @media screen and (min-width: $desktop) {
-    width: 1600px;
+    max-width: 1600px;
   }
 }
 

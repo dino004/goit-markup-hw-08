@@ -1365,19 +1365,19 @@ textarea {
   margin: 0 auto;
   background-color: #2f303a;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .footer {
     width: 480px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer {
     width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
   .footer {
-    width: 1600px;
+    max-width: 1600px;
   }
 }
 
