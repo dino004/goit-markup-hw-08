@@ -88,6 +88,10 @@
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
+
+  @media screen and (min-width: $tablet) {
+    min-height: 146px;
+  }
 }
 
 .cards__name {

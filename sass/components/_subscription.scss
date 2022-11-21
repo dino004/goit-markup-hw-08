@@ -3,8 +3,8 @@
 
   @media screen and (min-width: $desktop) {
     display: flex;
+    flex-grow: 1;
     justify-content: center;
-    align-items: flex-start;
     margin-top: 0;
     margin-left: 93px;
   }
@@ -12,7 +12,10 @@
 .subscribe {
   display: flex;
   flex-direction: column;
-  align-items: center;
+
+  @media screen and (max-width: 1199px) {
+    align-items: center;
+  }
 
   @media screen and (min-width: $desktop) {
     margin-right: 12px;
