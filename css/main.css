@@ -178,7 +178,7 @@ ul {
   .modal {
     width: 450px;
     position: absolute;
-    top: 50%;
+    top: 70%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%) scale(1);
             transform: translate(-50%, -50%) scale(1);
@@ -192,6 +192,7 @@ ul {
   .modal {
     width: 528px;
     min-height: 581px;
+    top: 50%;
   }
 }
 
@@ -506,12 +507,7 @@ ul {
 
 @media screen and (max-width: 767px) {
   .menu {
-    -webkit-transform: translateY(-100%);
-            transform: translateY(-100%);
-    -webkit-transition: -webkit-transform 500ms linear;
-    transition: -webkit-transform 500ms linear;
-    transition: transform 500ms linear;
-    transition: transform 500ms linear, -webkit-transform 500ms linear;
+    display: none;
     width: 100%;
     min-height: 100vh;
     position: absolute;
@@ -523,9 +519,6 @@ ul {
     background-color: #ffffff;
   }
   .menu.is-open {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    z-index: 4;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -533,6 +526,7 @@ ul {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    z-index: 4;
     overflow: auto;
   }
 }
@@ -888,8 +882,8 @@ textarea {
 }
 
 .policy__icon-off {
-  width: 16px;
-  height: 15px;
+  max-width: 16px;
+  max-height: 15px;
   margin-right: 9px;
   opacity: 1;
 }

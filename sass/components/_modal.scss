@@ -41,7 +41,7 @@
   @media screen and (min-width: $mobile) {
     width: 450px;
     position: absolute;
-    top: 50%;
+    top: 70%;
     left: 50%;
 
     transform: translate(-50%, -50%) scale(1);
@@ -54,6 +54,7 @@
   @media screen and (min-width: $desktop) {
     width: 528px;
     min-height: 581px;
+    top: 50%;
   }
 }
 

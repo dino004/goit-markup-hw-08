@@ -227,12 +227,12 @@
                     <svg class="policy__icon-off">
                       <use href="./images/icons.svg#icon-no-check"></use>
                     </svg>
-                    Погоджуюся з розсилкою та приймаю
+                    <p>Погоджуюся з розсилкою та приймаю
                     <span
                       ><a href="" class="policy__condition">
                         Умови договору</a
                       ></span
-                    ></label
+                    ></p></label
                   >
                 </div>
                 <div class="form__field">
@@ -303,23 +303,79 @@
           <ul class="projects">
             <li class="projekts__employment">
               <div class="projects__image">
-                <img src="./images/web.jpg" alt="веб розробка" width="370" />
+                <picture>
+                <source
+                  srcset="
+                    ./images/desktop-version/web.webp 1x,
+                    ./images/desktop-version/web@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/desktop-version/web.jpg 1x,
+                    ./images/desktop-version/web@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                />
+                <img
+                  src="./images/web.jpg"
+                  alt="веб розробка"
+                  width="370"
+                />
+              </picture>
               </div>
               <p class="projekts__text">Десктопні додатки</p>
             </li>
             <li class="projekts__employment">
               <div class="projects__image">
+                <picture>
+                <source
+                  srcset="
+                    ./images/desktop-version/development.webp 1x,
+                    ./images/desktop-version/development@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/desktop-version/development.jpg 1x,
+                    ./images/desktop-version/development@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                />
                 <img
                   src="./images/development.jpg"
                   alt="розробка"
                   width="370"
                 />
+              </picture>
               </div>
               <p class="projekts__text">Мобільні додатки</p>
             </li>
             <li class="projekts__employment">
               <div class="projects__image">
-                <img src="./images/design.jpg" alt="веб дизайн" width="370" />
+                <picture>
+                <source
+                  srcset="
+                    ./images/desktop-version/design.webp 1x,
+                    ./images/desktop-version/design@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/desktop-version/design.jpg 1x,
+                    ./images/desktop-version/design@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                />
+                <img
+                  src="./images/design.jpg"
+                  alt="веб дизайн"
+                  width="370"
+                />
+              </picture>
               </div>
               <p class="projekts__text">Дизайнерські рішення</p>
             </li>
@@ -385,13 +441,6 @@
                   alt="Ігор Дем'яненко"
                 />
               </picture>
-
-              <!-- <img
-                class="photo"
-                src="./images/igor.jpg"
-                alt="Ігор Дем'яненко"
-                width="270"
-              /> -->
               <div class="team__list">
                 <h3 class="team__name">Ігор Дем'яненко</h3>
                 <p class="team__job" lang="en">Product Designer</p>
@@ -502,12 +551,6 @@
                   alt="Ольга Рєпіна"
                 />
               </picture>
-              <!-- <img
-                class="photo"
-                src="./images/olga.jpg"
-                alt="Ольга Рєпіна"
-                width="270"
-              /> -->
               <div class="team__list">
                 <h3 class="team__name">Ольга Рєпіна</h3>
                 <p class="team__job" lang="en">Frontend Developer</p>
@@ -618,12 +661,6 @@
                   alt="Микола Тарасов"
                 />
               </picture>
-              <!-- <img
-                class="photo"
-                src="./images/mikola.jpg"
-                alt="Микола Тарасов"
-                width="270"
-              /> -->
               <div class="team__list">
                 <h3 class="team__name">Микола Тарасов</h3>
                 <p class="team__job" lang="en">Marketing</p>
@@ -734,12 +771,6 @@
                   alt="Михайло Єрмаков"
                 />
               </picture>
-              <!-- <img
-                class="photo"
-                src="./images/micha.jpg"
-                alt="Михайло Єрмаков"
-                width="270"
-              /> -->
               <div class="team__list">
                 <h3 class="team__name">Михайло Єрмаков</h3>
                 <p class="team__job" lang="en">UI Designer</p>
