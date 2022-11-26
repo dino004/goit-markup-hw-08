@@ -3,7 +3,6 @@ textarea {
 }
 
 .form__title {
-  max-width: 370px;
   margin: 0;
   margin-bottom: 12px;
   padding: 0;
@@ -13,6 +12,10 @@ textarea {
   font-size: 20px;
   line-height: 1.5;
   color: $title-text-color;
+
+  @media screen and (max-width: 1199px) {
+      max-width: 370px;
+  }
 
   @media screen and (min-width: $desktop) {
     width: 448px;

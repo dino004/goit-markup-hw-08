@@ -1,17 +1,5 @@
 .section--team {
   background-color: $secondary-bg-color;
-
-  @media screen and (min-width: $mobile) {
-    width: $mobile;
-  }
-
-  @media screen and (min-width: $tablet) {
-    width: $tablet;
-  }
-
-  @media screen and (min-width: $desktop) {
-    width: $desktop;
-  }
 }
 
 .team {

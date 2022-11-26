@@ -4,25 +4,13 @@
   margin: 0 auto;
 
   background-color: $hero-bg-color;
-
-  @media screen and (min-width: $mobile) and (max-width: 767px){
-    width: $mobile;
-  }
-
-  @media screen and (min-width: $tablet) and (max-width: 1199px) {
-    width: $tablet;
-  }
-
-  @media screen and (min-width: $desktop) {
-    max-width: 1600px;
-  }
 }
 
 .communication {
   @media screen and (min-width: $tablet) and (max-width: 1199px) {
     display: flex;
     justify-content: space-around;
-    // align-items: baseline;
+    align-items: baseline;
   }
 
   @media screen and (min-width: $desktop) {

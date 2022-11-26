@@ -2,7 +2,7 @@
   display: flex;
 
   @media screen and (max-width: 767px) {
-    margin-top: 300px;
+    margin-top: auto;
   }
 }
 
@@ -141,7 +141,9 @@
   margin-top: 64px;
 
   &__item:not(:last-child) {
-    margin-right: 20px;
+    margin-right: 10px;
+    padding-right: 10px;
+    border-right: 1px solid $accent-color;
   }
 
   &__link {
@@ -149,6 +151,7 @@
     font-size: 18px;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    text-transform: capitalize;
 
     color: $accent-color;
   }
@@ -160,4 +163,6 @@
 
 .social-header__list {
   display: flex;
+  flex-wrap: wrap;
+  row-gap: 10px;
 }
