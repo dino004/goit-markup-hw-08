@@ -1,4 +1,14 @@
 .navigation {
+
+.menu-button.is-open & {
+  @media screen and (max-width: 767px) {
+   
+        position: fixed;
+        top: 10px;
+        right: 15px;
+  }
+  }
+
   @media screen and (min-width: $desktop) {
     width: 100%;
   }
@@ -15,6 +25,8 @@
 }
 
 .menu-button {
+  width: 40px;
+  height: 40px;
   display: inline-flex;
   margin: 0;
   padding: 0;
@@ -95,19 +107,25 @@
     position: absolute;
     top: 0;
     left: 0;
-
-    padding-left: 40px;
-    padding-top: 48px;
-    padding-bottom: 48px;
-
     background-color: $header-bg-color;
+      padding-top: 48px;
+
+    @media screen and (max-width: 479px) {
+      padding-left: 20px;
+      padding-bottom: 15px;
+    }
+
+    @media screen and (min-width: $mobile) {
+      padding-left: 40px;
+      padding-bottom: 48px;
+    }
 
     &.is-open {
+      position: fixed;
       display: flex;
       flex-direction: column;
 
       z-index: 4;
-      overflow: auto;
     }
   }
 
@@ -121,7 +139,11 @@
 }
 
 .menu__item {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 479px) {
+    margin-bottom: 15px;
+  }
+
+  @media screen and (min-width: $mobile) and (max-width: 767px) {
     &:not(:last-child) {
       margin-bottom: 32px;
     }
@@ -129,11 +151,16 @@
 }
 
 .menu__link {
-  @media screen and (max-width: 767px) {
-    font-weight: 500;
+  font-weight: 500;
+  line-height: 1.2;
+  color: $title-text-color;
+
+  @media screen and (max-width: 479px) {
+    font-size: 30px;
+  }
+
+  @media screen and (min-width: $mobile) and (max-width: 767px) {
     font-size: 40px;
-    line-height: 1.2;
-    color: $title-text-color;
   }
 
   @media screen and (min-width: $tablet) {

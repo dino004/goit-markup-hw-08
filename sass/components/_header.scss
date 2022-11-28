@@ -1,4 +1,8 @@
 .header {
   position: relative;
   border-bottom: 1px solid $border-header-color;
+
+  .menu-button.is-open & {
+    border: none;
+  }
 }

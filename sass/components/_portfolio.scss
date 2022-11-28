@@ -64,7 +64,7 @@
 
   &:not(:last-child) {
     @media screen and (max-width: 767px) {
-          margin-bottom: 30px;
+      margin-bottom: 30px;
     }
   }
 }
@@ -87,10 +87,6 @@
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
-
-  @media screen and (min-width: $tablet) {
-    min-height: 146px;
-  }
 }
 
 .cards__name {
@@ -119,9 +115,11 @@
 }
 
 .card-overlay {
+  display: flex;
+  align-items: center;
   position: absolute;
   width: 100%;
-  min-height: 294px;
+  min-height: 100%;
   top: 0;
   left: 0;
 
@@ -138,19 +136,27 @@
 
 .card-overlay__hover {
   margin: 0;
-  padding-top: 77px;
+  // padding-top: 10px;
+  // padding-bottom: 10px;
   padding-left: 24px;
   padding-right: 24px;
+  font-size: 16px;
 
-  font-size: 18px;
   line-height: 1.5;
   color: $header-bg-color;
 
+  @media screen and (min-width: $mobile) {
+    font-size: 18px;
+    // padding-top: 77px;
+    // padding-bottom: 77px;
+  }
+
   @media screen and (min-width: $tablet) {
-    padding-top: 49px;
+    // padding-top: 49px;
   }
 
   @media screen and (min-width: $desktop) {
-    padding-top: 63px;
+    // padding-top: 63px;
+    // padding-bottom: 63px;
   }
 }

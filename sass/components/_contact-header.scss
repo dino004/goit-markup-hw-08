@@ -33,7 +33,14 @@
 }
 
 .contact-header__item {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 479px) {
+    &:not(:last-child) {
+        margin-top: 20px;
+      }
+  }
+  
+
+  @media screen and (min-width: $mobile) and (max-width: 767px) {
     &:not(:last-child) {
       margin-top: 32px;
     }
@@ -115,30 +122,46 @@
   }
 
   &--phone {
-    @media screen and (max-width: 767px) {
-      font-weight: 500;
-      font-size: 34px;
-      line-height: 1.2;
-      letter-spacing: 0.02em;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
 
-      color: $accent-color;
+    color: $accent-color;
+
+    @media screen and (max-width: 479px) {
+      font-size: 27px;
+    }
+
+    @media screen and (min-width: $mobile) and (max-width: 767px) {
+      font-size: 34px;
     }
   }
 
   &--mail {
-    @media screen and (max-width: 767px) {
-      font-weight: 500;
-      font-size: 24px;
-      line-height: 1.2;
-      letter-spacing: 0.02em;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
 
-      color: $primary-text-color;
+    color: $primary-text-color;
+
+    @media screen and (max-width: 479px) {
+      font-size: 22px;
+    }
+
+    @media screen and (min-width: $mobile) and (max-width: 767px) {
+      font-size: 24px;
     }
   }
 }
 
 .social-header {
-  margin-top: 64px;
+  @media screen and (max-width: 479px) {
+    margin-top: 45px;
+  }
+
+  @media screen and (min-width: $mobile) and (max-width: 767px) {
+    margin-top: 64px;
+  }
 
   &__item:not(:last-child) {
     margin-right: 10px;
@@ -148,12 +171,16 @@
 
   &__link {
     font-weight: 500;
-    font-size: 18px;
+    font-size: 14px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     text-transform: capitalize;
 
     color: $accent-color;
+
+    @media screen and (min-width: $mobile) and (max-width: 767px) {
+      font-size: 18px;
+    }
   }
 
   @media screen and (min-width: $tablet) {
@@ -163,6 +190,4 @@
 
 .social-header__list {
   display: flex;
-  flex-wrap: wrap;
-  row-gap: 10px;
 }
