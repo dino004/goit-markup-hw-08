@@ -1,14 +1,4 @@
 .navigation {
-
-.menu-button.is-open & {
-  @media screen and (max-width: 767px) {
-   
-        position: fixed;
-        top: 10px;
-        right: 15px;
-  }
-  }
-
   @media screen and (min-width: $desktop) {
     width: 100%;
   }
@@ -20,17 +10,34 @@
   }
 }
 
+button.menu-button.is-open {
+  @media screen and (max-width: 767px) {
+    position: fixed;
+    top: 10px;
+    right: 15px;
+  }
+}
+
 .menu-button__svg {
   z-index: 5;
 }
 
 .menu-button {
+  z-index: 10;
+  position: static;
+  top: 10px;
+  right: 15px;
+
   width: 40px;
   height: 40px;
+
   display: inline-flex;
+  justify-content: center;
+  align-items: center;
   margin: 0;
   padding: 0;
   border: none;
+
   line-height: 0;
   background-color: $header-bg-color;
 
@@ -55,6 +62,16 @@
 
 .menu-button.is-open .icon-menu {
   display: none;
+}
+
+.menu-button.is-open svg {
+  width: 18px;
+  height: 18px;
+}
+
+.menu-button svg {
+  width: 24px;
+  height: 16px;
 }
 
 .mobile-menu {
@@ -108,7 +125,7 @@
     top: 0;
     left: 0;
     background-color: $header-bg-color;
-      padding-top: 48px;
+    padding-top: 48px;
 
     @media screen and (max-width: 479px) {
       padding-left: 20px;

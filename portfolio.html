@@ -26,24 +26,22 @@
         <nav class="navigation">
           <button
             type="button"
-            class="menu-button is-open"
-            aria-expanded="false"
+            class="menu-button"
+            aria-expanded="true"
             aria-controls="menu-nav"
             data-menu-button
           >
             <svg
-              class="menu-button__svg"
-              width="40"
-              height="40"
+              class="menu-button__svg"              
               aria-label="перемикач мобільного меню"
             >
               <use
                 class="icon-menu"
-                href="./images/icons.svg#icon-close-black"
+                href="./images/icons.svg#icon-menu-mobile"
               ></use>
               <use
                 class="icon-cross"
-                href="./images/icons.svg#icon-menu-mobile"
+                href="./images/icons.svg#icon-close-black"
               ></use>
             </svg>
           </button>
@@ -51,14 +49,12 @@
             <div>
               <ul class="main-nav">
                 <li class="menu__item">
-                  <a href="./index.html" class="menu__link">Студія</a>
+                  <a href="./index.html" class="menu__link"
+                    >Студія</a
+                  >
                 </li>
                 <li class="menu__item">
-                  <a
-                    href="./portfolio.html"
-                    class="menu__link menu__link--current"
-                    >Портфоліо</a
-                  >
+                  <a href="./portfolio.html" class="menu__link menu__link--current">Портфоліо</a>
                 </li>
                 <li class="menu__item">
                   <a href="" class="menu__link">Контакти</a>
