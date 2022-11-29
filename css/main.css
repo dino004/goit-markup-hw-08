@@ -396,7 +396,6 @@ ul {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: #2196f3;
 }
 @media screen and (max-width: 479px) {
   .contact-header__link--phone {
@@ -412,7 +411,6 @@ ul {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: #757575;
 }
 @media screen and (max-width: 479px) {
   .contact-header__link--mail {
@@ -498,15 +496,6 @@ ul {
   right: 15px;
   width: 40px;
   height: 40px;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin: 0;
   padding: 0;
   border: none;
@@ -536,14 +525,19 @@ ul {
   display: none;
 }
 
-.menu-button.is-open svg {
+.icon-menu {
+  width: 24px;
+  height: 16px;
+}
+
+.icon-cross {
   width: 18px;
   height: 18px;
 }
 
-.menu-button svg {
-  width: 24px;
-  height: 16px;
+.menu-button__svg {
+  width: 100%;
+  height: 100%;
 }
 
 .mobile-menu {

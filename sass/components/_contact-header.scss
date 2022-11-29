@@ -128,8 +128,6 @@
     line-height: 1.2;
     letter-spacing: 0.02em;
 
-    color: $accent-color;
-
     @media screen and (max-width: 479px) {
       font-size: 27px;
     }
@@ -143,8 +141,6 @@
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
-
-    color: $primary-text-color;
 
     @media screen and (max-width: 479px) {
       font-size: 22px;
